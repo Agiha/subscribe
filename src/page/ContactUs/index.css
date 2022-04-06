@@ -1,0 +1,138 @@
+.ContactUsBigBox .backGround {
+  background-image: url(../../assets/BackGround.png);
+  height: 350px;
+  padding-top: 48px;
+  box-sizing: border-box;
+}
+.ContactUsBigBox .backGround .Auto {
+  margin: auto;
+  width: 946px;
+  display: flex;
+  justify-content: space-between;
+}
+.ContactUsBigBox .backGround .Auto .function .TitleBox {
+  margin-top: 48px;
+}
+.ContactUsBigBox .backGround .Auto .function .TitleBox .Title {
+  color: #ffffff;
+  font-size: 48px;
+  font-weight: 700;
+  font-family: "Manrope";
+  text-align: left;
+  line-height: 60px;
+}
+.ContactUsBigBox .backGround .Auto .function .TitleBox .Content {
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 500;
+  font-family: "Manrope";
+  text-align: left;
+  width: 274px;
+  height: 44px;
+  margin-top: 16px;
+}
+.ContactUsBigBox .backGround .Auto .function .TopicBigBox {
+  width: 38rem ;
+  border-radius: 4px;
+  opacity: 1;
+  background: #ffffff;
+  margin-top: 45px;
+  padding: 32px;
+  box-sizing: border-box;
+}
+.ContactUsBigBox .backGround .Auto .function .TopicBigBox .TopicBox .title {
+  color: #2e2c34;
+  font-size: 16px;
+  font-weight: 700;
+  font-family: "Manrope";
+  text-align: left;
+  margin-bottom: 24px;
+}
+.ContactUsBigBox .backGround .Auto .function .TopicBigBox .TopicBox .SelectBox {
+  width: 491px;
+  height: 48px;
+  margin-bottom: 24px;
+}
+.ContactUsBigBox .backGround .Auto .function .TopicBigBox .detailsBox .title {
+  color: #2e2c34;
+  font-size: 16px;
+  font-weight: 700;
+  font-family: "Manrope";
+  text-align: left;
+  margin-bottom: 24px;
+}
+.ContactUsBigBox .backGround .Auto .function .TopicBigBox .detailsBox .details {
+  width: 491px;
+  height: 96px;
+  margin-bottom: 24px;
+}
+.ContactUsBigBox .backGround .Auto .function .TopicBigBox .detailsBox .details .css-9ddj71-MuiInputBase-root-MuiOutlinedInput-root {
+  height: 96px;
+}
+.ContactUsBigBox .backGround .Auto .function .TopicBigBox .detailsBox .details label[data-shrink=false] + .MuiInputBase-formControl .css-1t8l2tu-MuiInputBase-input-MuiOutlinedInput-input {
+  height: 96px;
+}
+.ContactUsBigBox .backGround .Auto .function .TopicBigBox .DragBox .Attach {
+  color: #2e2c34;
+  font-size: 16px;
+  font-weight: 700;
+  font-family: "Manrope";
+  text-align: left;
+  margin-bottom: 24px;
+}
+.ContactUsBigBox .backGround .Auto .function .TopicBigBox .DragBox .DragAndDrop {
+  width: 491px;
+  height: 96px;
+  border-radius: 4px;
+  border: 1px solid #000001;
+}
+.ContactUsBigBox .backGround .Auto .backImg {
+  background-image: url(../../assets/RoundWire.png);
+  width: 330px;
+  height: 526px;
+  position: relative;
+  margin-top: 120px;
+}
+.ContactUsBigBox .backGround .Auto .backImg .man {
+  position: absolute;
+  width: 161px;
+  height: 161px;
+  top: 25px;
+  left: 188px;
+}
+.ContactUsBigBox .backGround .Auto .backImg .Ovals {
+  position: absolute;
+  top: 30px;
+  left: 315px;
+  width: 32px;
+  height: 32px;
+}
+.ContactUsBigBox .backGround .Auto .backImg .blackMan {
+  position: absolute;
+  top: 186px;
+  left: 64px;
+  width: 130px;
+  height: 130px;
+}
+.ContactUsBigBox .backGround .Auto .backImg .User {
+  width: 140px;
+  height: 140px;
+  position: absolute;
+  top: 266px;
+  left: 222px;
+}
+.ContactUsBigBox .backGround .Auto .backImg .Oval {
+  width: 72px;
+  height: 72px;
+  position: absolute;
+  top: 399px;
+  left: 138px;
+}
+.ContactUsBigBox .backGround .Auto .backImg .Icon {
+  width: 36px;
+  height: 36px;
+  position: absolute;
+  top: 26rem;
+  left: 9.8125rem;
+  color: #fff;
+}

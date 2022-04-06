@@ -1,0 +1,83 @@
+.HeaderBigBox {
+  background-color: #fff;
+  height: 72px;
+}
+.HeaderBigBox .HeaderBox {
+  display: flex;
+  justify-content: space-between;
+  width: 1140px;
+  height: 72px;
+  margin: auto;
+}
+.HeaderBigBox .HeaderBox .HeaderLeftBox {
+  display: flex;
+  align-items: center;
+}
+.HeaderBigBox .HeaderBox .HeaderLeftBox .LogoBox {
+  display: flex;
+  align-items: center;
+  margin-right: 40px;
+}
+.HeaderBigBox .HeaderBox .HeaderLeftBox .LogoBox .Icon {
+  width: 18px;
+  height: 18px;
+  margin-right: 12px;
+  color: #761FDE;
+}
+.HeaderBigBox .HeaderBox .HeaderLeftBox .LogoBox span {
+  font-size: 24px;
+  color: black;
+  font-weight: 700;
+}
+.HeaderBigBox .HeaderBox .HeaderLeftBox .OptionsIconBox {
+  display: flex;
+  justify-content: space-around;
+}
+.HeaderBigBox .HeaderBox .HeaderLeftBox .OptionsIconBox .HomeOptions {
+  height: 36px;
+  margin-right: 16px;
+  display: flex;
+  align-items: center;
+  color: black;
+}
+.HeaderBigBox .HeaderBox .HeaderLeftBox .OptionsIconBox .HomeOptions .ICON {
+  margin: 10px;
+}
+.HeaderBigBox .HeaderBox .HeaderLeftBox .OptionsIconBox .HomeOptions svg {
+  margin: 0;
+}
+.HeaderBigBox .HeaderBox .personalBigBox {
+  display: flex;
+  align-items: center ;
+}
+.HeaderBigBox .HeaderBox .personalBigBox .personalBox {
+  width: 83px;
+  height: 36px;
+  margin-right: 12px;
+  color: #504f54;
+  font-size: 14px;
+  font-weight: 500;
+  font-family: "Manrope";
+  text-align: center;
+  line-height: 2.25rem;
+}
+.HeaderBigBox .HeaderBox .personalBigBox .SignUpBox {
+  width: 83px;
+  height: 36px;
+  margin-right: 12px;
+  color: #504f54;
+  font-size: 14px;
+  font-weight: 700;
+  font-family: "Manrope";
+  text-align: center;
+  line-height: 2.25rem;
+  border: 1px solid #cececee5;
+  border-radius: 4px;
+}
+.css-2liczv-MuiBadge-badge {
+  background-color: #dc3b3b !important;
+  min-width: 6px !important;
+  height: 6px !important;
+  top: 13px !important;
+  right: 15px !important;
+}

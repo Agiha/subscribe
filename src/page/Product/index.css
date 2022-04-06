@@ -1,0 +1,65 @@
+.FAQsBigBox .titleBox {
+  color: #2e2c34;
+  font-size: 48px;
+  font-weight: 700;
+  font-family: "Manrope";
+  text-align: center;
+  line-height: 60px;
+  margin-top: 48px;
+  margin-bottom: 32px;
+}
+.FAQsBigBox .problemBox {
+  width: 720px;
+  margin: auto;
+  margin-bottom: 48px;
+}
+.FAQsBigBox .problemBox .css-1elwnq4-MuiPaper-root-MuiAccordion-root:last-of-type {
+  margin-bottom: 16px;
+}
+.FAQsBigBox .problemBox .css-15v22id-MuiAccordionDetails-root {
+  padding: 8px 16px 16px;
+  color: #84818A;
+  font-size: 16px;
+  font-weight: 500;
+}
+.FAQsBigBox .problemBox .css-1g97t1b-MuiTypography-root {
+  width: 90%;
+  color: #2e2c34 !important;
+  font-size: 18px !important;
+  font-weight: 700 !important;
+}
+.FAQsBigBox .questionsBox {
+  margin: auto;
+}
+.FAQsBigBox .questionsBox .Title {
+  color: #2e2c34;
+  font-size: 18px;
+  font-weight: 700;
+  font-family: "Manrope";
+  text-align: center;
+  margin-bottom: 12px;
+}
+.FAQsBigBox .questionsBox .contentBox {
+  color: #84818a;
+  font-size: 14px;
+  font-weight: 500;
+  text-align: center;
+  line-height: 20px;
+  font-family: "Manrope";
+}
+.FAQsBigBox .questionsBox .content {
+  color: #84818a;
+  font-size: 14px;
+  font-weight: 500;
+  text-align: center;
+  line-height: 20px;
+  font-family: "Manrope";
+}
+.FAQsBigBox .questionsBox .content span {
+  color: #761fde;
+  font-size: 14px;
+  font-weight: 700;
+  text-align: center;
+  line-height: 20px;
+  font-family: "Manrope";
+}

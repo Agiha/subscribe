@@ -1,0 +1,101 @@
+.NotificationsBigBox {
+  background-color: #fff;
+  margin-top: 2px;
+  padding-top: 45px;
+  box-sizing: border-box;
+}
+.NotificationsBigBox .Title {
+  display: flex;
+  justify-content: space-between;
+  width: 750px;
+  margin: auto;
+  margin-bottom: 24px;
+}
+.NotificationsBigBox .Title .Notifications {
+  color: #2e2c34;
+  font-size: 28px;
+  font-weight: 700;
+  font-family: "Manrope";
+  text-align: left;
+  line-height: 36px;
+}
+.NotificationsBigBox .Title .Mark {
+  color: #84818a;
+  font-size: 14px;
+  font-weight: 700;
+  font-family: "Manrope";
+  text-align: right;
+  line-height: 20px;
+}
+.NotificationsBigBox .ListBox {
+  margin: auto;
+  width: 750px;
+}
+.NotificationsBigBox .ListBox .noticeBox {
+  display: flex;
+  align-items: center ;
+  padding: 24px;
+  box-sizing: border-box;
+  border-top: 1px solid #EBEAED;
+}
+.NotificationsBigBox .ListBox .noticeBox .Img {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  margin-right: 24px;
+}
+.NotificationsBigBox .ListBox .noticeBox .Img img {
+  width: 100%;
+  height: 100%;
+}
+.NotificationsBigBox .ListBox .noticeBox .contentBox {
+  width: 654px;
+}
+.NotificationsBigBox .ListBox .noticeBox .contentBox .nameAndTime {
+  display: flex;
+  justify-content: space-between;
+}
+.NotificationsBigBox .ListBox .noticeBox .contentBox .nameAndTime .Name {
+  color: #2e2c34;
+  font-size: 18px;
+  font-weight: 700;
+  font-family: "Manrope";
+  text-align: left;
+}
+.NotificationsBigBox .ListBox .noticeBox .contentBox .nameAndTime .Time {
+  color: #84818a;
+  font-size: 12px;
+  font-weight: 500;
+  font-family: "Manrope";
+  text-align: right;
+  line-height: 18px;
+}
+.NotificationsBigBox .ListBox .noticeBox .contentBox .content {
+  display: flex;
+  align-items: center;
+  margin-top: 4px;
+}
+.NotificationsBigBox .ListBox .noticeBox .contentBox .content .noticeContent {
+  color: #84818a;
+  font-size: 16px;
+  font-weight: 500;
+  font-family: "Manrope";
+  text-align: left;
+}
+.NotificationsBigBox .ListBox .noticeBox .contentBox .content .Source {
+  display: flex;
+  align-items: center;
+}
+.NotificationsBigBox .ListBox .noticeBox .contentBox .content .Source .Icon {
+  width: 16px;
+  height: 16px;
+  color: #761fde;
+}
+.NotificationsBigBox .ListBox .noticeBox .contentBox .content .Source span {
+  color: #2e2c34;
+  font-size: 14px;
+  font-weight: 500;
+  font-family: "Manrope";
+  text-align: left;
+  line-height: 20px;
+}
