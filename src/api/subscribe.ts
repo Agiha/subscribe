@@ -1,6 +1,6 @@
 import axios, { AxiosRequestConfig } from 'axios'
 
-const BASEURL = 'http://192.168.31.23:8899/'
+const BASEURL = 'http://192.168.31.23:8899'
 export async function getCalendarList(obj: any) {
   return await axios.get(`${BASEURL}/get-drop`, {
     params: obj,
@@ -20,18 +20,16 @@ export async function verifyEmailCode(obj: any) {
   )
 }
 export async function getKeyWord(obj: any) {
-  return await axios.get(
-    `${BASEURL}/take/getHotspotAntistop
-    `,
-    obj
-  )
+  return await axios.get(`${BASEURL}/take/getHotspotAntistop`, {
+    params: obj,
+  })
 }
 
 export async function getNews(obj: any) {
   return await axios.get(
-    `${BASEURL}/take/getHotspotAntistopNewS
-      `,
-    obj
+    `${BASEURL}/take/getHotspotAntistopNewS`, {
+        params: obj,
+      }
   )
 }
 

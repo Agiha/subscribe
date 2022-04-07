@@ -1,61 +1,90 @@
-import React from 'react'
-import './index.css'
-import man from '../../assets/header/man.png'
-import HeaderBox from '../../compoment/Header'
-import Box from '@mui/material/Box'
-import TextField from '@mui/material/TextField'
-import SourceIcon from '@mui/icons-material/Source'
-import Stack from '@mui/material/Stack'
-import Button from '@mui/material/Button'
-import Accordion from '@mui/material/Accordion'
-import AccordionDetails from '@mui/material/AccordionDetails'
-import AccordionSummary from '@mui/material/AccordionSummary'
-import Typography from '@mui/material/Typography'
-import ExpandMoreIcon from '@mui/icons-material/ExpandMore'
+import React, { useEffect, useState } from "react";
+import "./index.css";
+import man from "../../assets/header/man.png";
+import HeaderBox from "../../compoment/Header";
+import Box from "@mui/material/Box";
+import TextField from "@mui/material/TextField";
+import SourceIcon from "@mui/icons-material/Source";
+import Stack from "@mui/material/Stack";
+import Button from "@mui/material/Button";
+import Accordion from "@mui/material/Accordion";
+import AccordionDetails from "@mui/material/AccordionDetails";
+import AccordionSummary from "@mui/material/AccordionSummary";
+import Typography from "@mui/material/Typography";
+import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
+import { useWeb3React } from "@web3-react/core";
+import { getKeyWord, getNews, sendEmailCode } from "../../api/subscribe";
+import { formatTime } from "../../utils/formatTime";
+import Loading from '../../compoment/loding/index'
 export default function Chat() {
   const FAQsData = [
     {
-      title: 'What is Substance?',
+      title: "What is Substance?",
       content:
-        'Here for the first time? See how Substance can help from sales and marketing, to customer engagement and support.',
+        "Here for the first time? See how Substance can help from sales and marketing, to customer engagement and support.",
     },
     {
-      title: 'How does Substance work?',
+      title: "How does Substance work?",
       content:
-        'Here for the first time? See how Substance can help from sales and marketing, to customer engagement and support.',
+        "Here for the first time? See how Substance can help from sales and marketing, to customer engagement and support.",
     },
     {
-      title: 'Can I talk to real person to get my questions answered?',
+      title: "Can I talk to real person to get my questions answered?",
       content:
-        'Here for the first time? See how Substance can help from sales and marketing, to customer engagement and support.',
+        "Here for the first time? See how Substance can help from sales and marketing, to customer engagement and support.",
     },
     {
-      title: 'In which country Substance available?',
+      title: "In which country Substance available?",
       content:
-        'Here for the first time? See how Substance can help from sales and marketing, to customer engagement and support.',
+        "Here for the first time? See how Substance can help from sales and marketing, to customer engagement and support.",
     },
-  ]
-  const [expanded, setExpanded] = React.useState<string | false>(false)
+  ];
+  const [expanded, setExpanded] = React.useState<string | false>(false);
   const NotificationsData = [
     {
       head: man,
       Source: true,
-      name: 'Brian Tylor',
-      time: 'a minute ago',
-      noticeContent: 'Change an issues from “In progress” to “Review”',
+      name: "Brian Tylor",
+      time: "a minute ago",
+      noticeContent: "Change an issues from “In progress” to “Review”",
     },
     {
       head: man,
       Source: false,
-      name: 'Roy Marker',
-      time: 'a minute ago',
-      noticeContent: 'Joined the Substance group.',
+      name: "Roy Marker",
+      time: "a minute ago",
+      noticeContent: "Joined the Substance group.",
     },
-  ]
+  ];
   const handleChange =
     (panel: string) => (event: React.SyntheticEvent, isExpanded: boolean) => {
-      setExpanded(isExpanded ? panel : false)
-    }
+      setExpanded(isExpanded ? panel : false);
+    };
+  const { account, chainId, deactivate } = useWeb3React();
+
+  const [eamil, setEmail] = useState("");
+  const [keyWord, setKeyWord] = useState<any[]>([]);
+  const [news, setNews] = useState<any[]>([]);
+  const addEmail = () => {
+    sendEmailCode({ address: account, email: eamil });
+  };
+  const getNewsByKeyWord = (antistop:string)=>{
+    getNews({antistop,count:2}).then((res)=>{
+      if(res.data.code=='200'){
+        setNews(res.data.data[0][antistop])
+      }
+    })
+  }
+  useEffect(()=>{
+    getKeyWord({count:3}).then((res)=>{
+      console.log(res);
+      if(res.data.code=='200'){
+        setKeyWord(res.data.data)
+      }
+      
+    })
+  },[])
+
   return (
     <div>
       <HeaderBox></HeaderBox>
@@ -80,63 +109,64 @@ export default function Chat() {
           </div>
         </div>
         <div className="problemBox">
-          {FAQsData.map((item, index) => {
-            return (
-              <div>
-                <Accordion
-                  expanded={expanded === `panel${index}`}
-                  onChange={handleChange(`panel${index}`)}
-                >
-                  <AccordionSummary
-                    expandIcon={<ExpandMoreIcon />}
-                    aria-controls="panel4bh-content"
-                    id="panel4bh-header"
+          {
+            keyWord.length>0?keyWord.map((item, index) => {
+              return (
+                <div>
+                  <Accordion
+                    expanded={expanded === `panel${index}`}
+                    onChange={handleChange(`panel${index}`)}
                   >
-                    <Typography sx={{ width: '80%', flexShrink: 0 }}>
-                      {item.title}
-                      <Button variant="outlined" className="btn">
-                        subscribe
-                      </Button>
-                    </Typography>
-                  </AccordionSummary>
-                  <AccordionDetails>
-                    <Typography>
-                      <div className="ListBox">
-                        {NotificationsData.map((item) => {
-                          return (
-                            <div className="noticeBox">
-                              <div className="Img">
-                                <img src={item.head} alt="" />
-                              </div>
-                              <div className="contentBox">
-                                <div className="nameAndTime">
-                                  <div className="Name">{item.name}</div>
-                                  <div className="Time">{item.time}</div>
+                    <AccordionSummary
+                      expandIcon={<ExpandMoreIcon />}
+                      aria-controls="panel4bh-content"
+                      id="panel4bh-header"
+                      onClick={()=>{
+                        getNewsByKeyWord(item.antistop)
+                      }}
+                    >
+                      <Typography sx={{ width: "80%", flexShrink: 0 }}>
+                        {item.antistop}
+                        <Button variant="outlined" className="btn">
+                          subscribe
+                        </Button>
+                      </Typography>
+                    </AccordionSummary>
+                    <AccordionDetails>
+                      <Typography>
+                       
+                        <div className="ListBox">
+                          {
+                             news.length>0?news.map((item) => {
+                            return (
+                              <div className="noticeBox">
+                                <div className="Img">
+                                  <img src={item.authorProfileImageUrl} alt="" />
                                 </div>
-                                <div className="content">
-                                  <div className="noticeContent">
-                                    {item.noticeContent}
+                                <div className="contentBox">
+                                  <div className="nameAndTime">
+                                    <div className="Name">@{item.authorUserName}</div>
+                                    <div className="Time">{formatTime(new Date(item.createdAt).getTime(),'Y-M-D H:M:S')}</div>
                                   </div>
-                                  {item.Source ? (
-                                    <div className="Source">
-                                      <SourceIcon className="Icon"></SourceIcon>
-                                      <span>Substance Digital Branding </span>
+                                  <div className="content">
+                                    <div className="noticeContent">
+                                      {item.text}
                                     </div>
-                                  ) : (
-                                    ''
-                                  )}
+                                  </div>
                                 </div>
                               </div>
-                            </div>
-                          )
-                        })}
-                      </div>
-                    </Typography>
-                  </AccordionDetails>
-                </Accordion>
-              </div>
-            )
-          })}
+                            );
+                          }):<Loading></Loading>
+                          }
+                         
+                        </div>
+                      </Typography>
+                    </AccordionDetails>
+                  </Accordion>
+                </div>
+              );
+            }):<Loading></Loading>
+          }
         </div>
       </div>
       <div className="bottomBigBox">
@@ -161,16 +191,26 @@ export default function Chat() {
                     id="outlined-basic"
                     label="Email address"
                     variant="outlined"
+                    onChange={(event) => {
+                      console.log(event.target.value);
+                      setEmail(event.target.value);
+                    }}
                   />
                 </Box>
               </div>
               <div className="btn">
-                <Button variant="outlined">Subscribe</Button>
+                <Button
+                  disabled={account ? false : true}
+                  onClick={addEmail}
+                  variant="outlined"
+                >
+                  AddEmail
+                </Button>
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-  )
+  );
 }
