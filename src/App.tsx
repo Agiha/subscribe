@@ -16,11 +16,11 @@ import { HashRouter, Switch, Route } from 'react-router-dom'
 import Layouts from './compoment/layout'
 import './utils/rem'
 
-import ContactUs from  './page/ContactUs'
-import Product from  './page/Product'
-import AboutUs from  './page/AboutUs'
-import Team from  './page/Team'
-import MyTask from  './page/MyTask'
+import ContactUs from './page/ContactUs'
+import FAQ from './page/FAQ'
+import Subscribe from './page/Subscribe'
+import Explore from './page/Explore'
+import MyTask from './page/MyTask'
 function getLibrary(provider: ExternalProvider | JsonRpcFetchFunc) {
   const library = new Web3Provider(provider)
   library.pollingInterval = 5000
@@ -34,15 +34,13 @@ function App() {
     <Web3ReactProvider getLibrary={getLibrary}>
       <Layouts>
         {/* <Home></Home> */}
-      <HashRouter>
-         <Switch>
-           <Route path="/" exact component={Product}></Route>
-           <Route path="/AboutUs" exact component={AboutUs}></Route>
-           <Route path="/Product" exact component={Product}></Route>
-           <Route path="/Team" exact component={Team}></Route>
-           <Route path="/ContactUs" exact component={ContactUs}></Route>
-         </Switch>
-       </HashRouter>
+        <HashRouter>
+          <Switch>
+            <Route path="/faq" exact component={FAQ}></Route>
+            <Route path="/" exact component={Subscribe}></Route>
+            <Route path="/explore" exact component={Explore}></Route>
+          </Switch>
+        </HashRouter>
       </Layouts>
     </Web3ReactProvider>
   )

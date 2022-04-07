@@ -13,7 +13,7 @@
   color: #ffffff;
   font-size: 48px;
   font-weight: 700;
-  font-family: "Manrope";
+  font-family: 'Manrope';
   text-align: center;
   line-height: 60px;
   margin-bottom: 41px;
@@ -38,33 +38,36 @@
   color: #84818a;
   font-size: 18px;
   font-weight: 500;
-  font-family: "Manrope";
+  font-family: 'Manrope';
   text-align: left;
 }
 .TeamBigBox .backGround .Auto .PopularBox {
   color: #ffffff;
   font-size: 16px;
   font-weight: 500;
-  font-family: "Manrope";
+  font-family: 'Manrope';
   text-align: center;
   margin-top: 32px;
 }
-.TeamBigBox .backGround .Auto .figureOutBox {
+.TeamBigBox .figureOutBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   margin-top: 130px;
 }
-.TeamBigBox .backGround .Auto .figureOutBox .figureOut {
+.TeamBigBox .figureOutBox .figureOut {
   width: 750px;
   height: 169px;
   border-radius: 4px;
   opacity: 1;
-  border: 1px solid #EBEAED;
+  border: 1px solid #ebeaed;
   background: #ffffff;
   display: flex;
   padding: 20px 24px;
   box-sizing: border-box;
   margin-bottom: 16px;
 }
-.TeamBigBox .backGround .Auto .figureOutBox .figureOut .iconBox {
+.TeamBigBox .figureOutBox .figureOut .iconBox {
   width: 48px;
   height: 48px;
   border-radius: 50px;
@@ -72,69 +75,69 @@
   background: rgba(85, 66, 246, 0.1);
   margin-right: 20px;
 }
-.TeamBigBox .backGround .Auto .figureOutBox .figureOut .iconBox .icon {
+.TeamBigBox .figureOutBox .figureOut .iconBox .icon {
   width: 3.5rem;
   height: 24px;
-  color: #761FDE;
+  color: #761fde;
   margin: 12px 12px;
 }
-.TeamBigBox .backGround .Auto .figureOutBox .figureOut .contentBox .title {
+.TeamBigBox .figureOutBox .figureOut .contentBox .title {
   color: #2e2c34;
   font-size: 18px;
   font-weight: 700;
-  font-family: "Manrope";
+  font-family: 'Manrope';
   text-align: left;
 }
-.TeamBigBox .backGround .Auto .figureOutBox .figureOut .contentBox .content {
+.TeamBigBox .figureOutBox .figureOut .contentBox .content {
   width: 642px;
   color: #84818a;
   font-size: 16px;
   font-weight: 500;
-  font-family: "Manrope";
+  font-family: 'Manrope';
   text-align: left;
 }
-.TeamBigBox .backGround .Auto .figureOutBox .figureOut .contentBox .articlesBigBox {
+.TeamBigBox .figureOutBox .figureOut .contentBox .articlesBigBox {
   display: flex;
   justify-content: space-between;
   margin-top: 24px;
   margin-left: 10px;
 }
-.TeamBigBox .backGround .Auto .figureOutBox .figureOut .contentBox .articlesBigBox .TotalBox {
+.TeamBigBox .figureOutBox .figureOut .contentBox .articlesBigBox .TotalBox {
   display: flex;
   align-items: center;
 }
-.TeamBigBox .backGround .Auto .figureOutBox .figureOut .contentBox .articlesBigBox .TotalBox .Total {
+.TeamBigBox .figureOutBox .figureOut .contentBox .articlesBigBox .TotalBox .Total {
   margin-right: 12px;
 }
-.TeamBigBox .backGround .Auto .figureOutBox .figureOut .contentBox .articlesBigBox .TotalBox .Total img {
+.TeamBigBox .figureOutBox .figureOut .contentBox .articlesBigBox .TotalBox .Total img {
   width: 24px;
   height: 24px;
   border-radius: 24px;
   border: 1px solid #010101;
   margin-left: -10px;
 }
-.TeamBigBox .backGround .Auto .figureOutBox .figureOut .contentBox .articlesBigBox .TotalBox .Written .By {
+.TeamBigBox .figureOutBox .figureOut .contentBox .articlesBigBox .TotalBox .Written .By {
   color: #84818a;
   font-size: 12px;
   font-weight: 500;
-  font-family: "Manrope";
+  font-family: 'Manrope';
   text-align: left;
   line-height: 18px;
   margin-right: 4px;
 }
-.TeamBigBox .backGround .Auto .figureOutBox .figureOut .contentBox .articlesBigBox .TotalBox .Written span {
+.TeamBigBox .figureOutBox .figureOut .contentBox .articlesBigBox .TotalBox .Written span {
   color: #2e2c34;
   font-size: 12px;
   font-weight: 500;
-  font-family: "Manrope";
+  font-family: 'Manrope';
   text-align: left;
   line-height: 18px;
 }
-.TeamBigBox .backGround .Auto .figureOutBox .figureOut .contentBox .articlesBigBox .articles {
+.TeamBigBox .figureOutBox .figureOut .contentBox .articlesBigBox .articles {
   color: #84818a;
   font-size: 12px;
   font-weight: 500;
-  font-family: "Manrope";
+  font-family: 'Manrope';
   text-align: right;
   line-height: 18px;
 }

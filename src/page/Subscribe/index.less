@@ -1,5 +1,4 @@
 .NotificationsBigBox {
-  background-color: #fff;
   margin-top: 2px;
   padding-top: 45px;
   padding-bottom: 20px;
@@ -15,7 +14,7 @@
       color: rgba(46, 44, 52, 1);
       font-size: 28px;
       font-weight: 700;
-      font-family: "Manrope";
+      font-family: 'Manrope';
       text-align: left;
       line-height: 36px;
     }
@@ -23,7 +22,7 @@
       color: rgba(132, 129, 138, 1);
       font-size: 14px;
       font-weight: 700;
-      font-family: "Manrope";
+      font-family: 'Manrope';
       text-align: right;
       line-height: 20px;
     }
@@ -38,6 +37,7 @@
       width: 750px;
       .TextField {
         width: 600px;
+        background-color: #fff;
       }
       .btnBox {
         margin-left: 25px;
@@ -68,9 +68,9 @@
       font-weight: 700 !important;
     }
     button,
-    html [type="button"],
-    [type="reset"],
-    [type="submit"] {
+    html [type='button'],
+    [type='reset'],
+    [type='submit'] {
       -webkit-appearance: button;
       margin-left: 30px;
     }
@@ -106,14 +106,14 @@
             color: rgba(46, 44, 52, 1);
             font-size: 18px;
             font-weight: 700;
-            font-family: "Manrope";
+            font-family: 'Manrope';
             text-align: left;
           }
           .Time {
             color: rgba(132, 129, 138, 1);
             font-size: 12px;
             font-weight: 500;
-            font-family: "Manrope";
+            font-family: 'Manrope';
             text-align: right;
             line-height: 18px;
           }
@@ -126,7 +126,7 @@
             color: rgba(132, 129, 138, 1);
             font-size: 16px;
             font-weight: 500;
-            font-family: "Manrope";
+            font-family: 'Manrope';
             text-align: left;
           }
           .Source {
@@ -141,7 +141,7 @@
               color: rgba(46, 44, 52, 1);
               font-size: 14px;
               font-weight: 500;
-              font-family: "Manrope";
+              font-family: 'Manrope';
               text-align: left;
               line-height: 20px;
             }
@@ -153,12 +153,13 @@
 }
 .bottomBigBox {
   width: 100%;
-  background-color: #fff;
-  height: 200px;
+  height: 150px;
   position: fixed;
   bottom: 0px;
+  background-color: #fff;
+
   .add {
-    width: 74rem;
+    width: 1140px;
     margin: auto;
     display: flex;
     justify-content: space-between;
@@ -182,6 +183,11 @@
         align-items: center;
         .Email {
           width: 300px;
+          .emailFieldBox {
+            & > :not(style) {
+              width: 280px;
+            }
+          }
         }
         .btn {
           width: 100px;
