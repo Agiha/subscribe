@@ -10,27 +10,31 @@ import HeaderBox from "../../compoment/Header";
 export default function BasicTimeline() {
   const FAQsData = [
     {
-      title:'What is Substance?',
-      content:'Here for the first time? See how Substance can help from sales and marketing, to customer engagement and support.'
+      title:'What is subscribe feature?',
+      content:"It's an integration between The APIS and Twitter. This feature allows users to follow the trending tweets based on their desired keywords in recent Tweets."
     },
     {
-      title:'How does Substance work?',
-      content:'Here for the first time? See how Substance can help from sales and marketing, to customer engagement and support.'
+      title:'Who can use our subscribe function ?',
+      content:"Anyone can sign up to have a newsletter for now. In the future, this feature will be exclusive to premium members. Note: Signing up for and using The APIS subscribe is subject to The APIS’s Terms of Service and Privacy Policy. "
     } ,{
-      title:'Can I talk to real person to get my questions answered?',
-      content:'Here for the first time? See how Substance can help from sales and marketing, to customer engagement and support.'
+      title:'How do I set up my The APIS account?',
+      content:'Connect your wallet and then type in your email address at the bottom to set up. '
     },
     {
-      title:'In which country Substance available?',
-      content:'Here for the first time? See how Substance can help from sales and marketing, to customer engagement and support.'
+      title:'What kind of tweets are shared?',
+      content:'The APIS offers several trending tweets which include the keyword you care about.'
     },
     {
-      title:'How do i sign up with Substance',
-      content:'Here for the first time? See how Substance can help from sales and marketing, to customer engagement and support.'
+      title:'How do users subscribe newsletter?',
+      content:'They can check trending tweets by typing in the keyword on the explore page. On the subscribe page, users can subscribe by clicking "subscribe" bottoun besides hot hashtag or typing in the keyword of the tweets they want to subscribe to.'
     },
     {
-      title:'How is our data being protected?',
-      content:'Here for the first time? See how Substance can help from sales and marketing, to customer engagement and support.'
+      title:'How do readers unsubscribe from a newsletter?',
+      content:'They can tap or click on the Unsubscribe or Manage subscription link in any email received from The APIS. '
+    },
+    {
+      title:'Are there any rules regarding  newsletter content?',
+      content:'All content published follow the  Terms of Service and Privacy Policy, and the Twitter Rules and policies. The APIS is intended to support a wide range of editorial content, but it is not meant to be used for publications that primarily exist to host promotions, giveaways, or similar activities.'
     },
   ];
   const [expanded, setExpanded] = React.useState<string | false>(false);
