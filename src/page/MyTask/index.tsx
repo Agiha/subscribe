@@ -1,12 +1,12 @@
-import React from "react";
-import "./index.css";
-import Headers from "../../assets/APISlogo.png";
-import IconLabelTabs from "../../compoment/Tabs/index";
-import HeaderBox from "../../compoment/PurpleHead";
+import React from 'react'
+import './index.css'
+import Headers from '../../assets/APISlogo.png'
+import IconLabelTabs from '../../compoment/Tabs/index'
+import HeaderBox from '../../compoment/Header'
 export default function MyTask() {
   return (
     <>
-        <HeaderBox></HeaderBox>
+      <HeaderBox></HeaderBox>
 
       <div className="taskBigBox">
         <div className="portraitBox">
@@ -22,5 +22,5 @@ export default function MyTask() {
         </div>
       </div>
     </>
-  );
+  )
 }

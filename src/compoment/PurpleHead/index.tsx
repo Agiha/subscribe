@@ -2,8 +2,12 @@ import React from 'react'
 import './index.css'
 import { HashRouter, Switch, Route, Link } from 'react-router-dom'
 import LeakAddIcon from '@mui/icons-material/LeakAdd'
+import MetamaskConnect from '../MetamaskConnect'
+import { useEagerConnect } from '../../utils/hook'
 
 export default function PurpleHead() {
+  const triedEager = useEagerConnect()
+
   return (
     <div className="PurpleHeadBigTop">
       <div className="HeaderBox">
@@ -34,8 +38,7 @@ export default function PurpleHead() {
         </div>
 
         <div className="personalBigBox">
-          <div className="personalBox">Sign in</div>
-          <div className="SignUpBox">Sign up</div>
+          <MetamaskConnect triedEager={triedEager} />
         </div>
       </div>
     </div>
