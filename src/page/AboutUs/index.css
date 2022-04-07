@@ -2,7 +2,9 @@
   background-color: #fff;
   margin-top: 2px;
   padding-top: 45px;
+  padding-bottom: 20px;
   box-sizing: border-box;
+  margin-bottom: 200px;
 }
 .NotificationsBigBox .Title {
   display: flex;
@@ -27,16 +29,65 @@
   text-align: right;
   line-height: 20px;
 }
+.NotificationsBigBox .TextFieldBigBox {
+  margin: auto;
+  width: 750px;
+}
+.NotificationsBigBox .TextFieldBigBox .TextFieldBox {
+  display: flex;
+  align-items: center;
+  width: 750px;
+}
+.NotificationsBigBox .TextFieldBigBox .TextFieldBox .TextField {
+  width: 600px;
+}
+.NotificationsBigBox .TextFieldBigBox .TextFieldBox .btnBox {
+  margin-left: 25px;
+}
+.NotificationsBigBox .TextFieldBigBox .TextFieldBox .btnBox .btn {
+  font-weight: 700;
+  height: 50px;
+}
+.NotificationsBigBox .problemBox {
+  width: 765px;
+  margin: auto;
+  margin-top: 32px;
+}
+.NotificationsBigBox .problemBox .css-1elwnq4-MuiPaper-root-MuiAccordion-root:last-of-type {
+  margin-bottom: 30px;
+}
+.NotificationsBigBox .problemBox .css-15v22id-MuiAccordionDetails-root {
+  padding: 8px 16px 16px;
+  color: #84818a;
+  font-size: 16px;
+  font-weight: 500;
+}
+.NotificationsBigBox .problemBox .css-1g97t1b-MuiTypography-root {
+  width: 90%;
+  color: #2e2c34 !important;
+  font-size: 18px !important;
+  font-weight: 700 !important;
+}
+.NotificationsBigBox .problemBox button,
+.NotificationsBigBox .problemBox html [type="button"],
+.NotificationsBigBox .problemBox [type="reset"],
+.NotificationsBigBox .problemBox [type="submit"] {
+  -webkit-appearance: button;
+  margin-left: 30px;
+}
+.NotificationsBigBox .problemBox .css-o4b71y-MuiAccordionSummary-content {
+  margin: 20px 0;
+}
 .NotificationsBigBox .ListBox {
   margin: auto;
   width: 750px;
 }
 .NotificationsBigBox .ListBox .noticeBox {
   display: flex;
-  align-items: center ;
+  align-items: center;
   padding: 24px;
   box-sizing: border-box;
-  border-top: 1px solid #EBEAED;
+  border-top: 1px solid #ebeaed;
 }
 .NotificationsBigBox .ListBox .noticeBox .Img {
   width: 48px;
@@ -98,4 +149,40 @@
   font-family: "Manrope";
   text-align: left;
   line-height: 20px;
+}
+.bottomBigBox {
+  width: 100%;
+  background-color: #fff;
+  height: 200px;
+  position: fixed;
+  bottom: 0px;
+}
+.bottomBigBox .add {
+  width: 74rem;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 40px;
+  box-sizing: border-box;
+}
+.bottomBigBox .add .selectionTitle .Title {
+  font-size: 20px;
+  color: #000;
+  font-weight: 800;
+}
+.bottomBigBox .add .selectionTitle .titleConcent {
+  font-size: 16px;
+  color: #747171;
+  font-weight: 500;
+}
+.bottomBigBox .add .EmailBigBox .EmailBox {
+  display: flex;
+  align-items: center;
+}
+.bottomBigBox .add .EmailBigBox .EmailBox .Email {
+  width: 300px;
+}
+.bottomBigBox .add .EmailBigBox .EmailBox .btn {
+  width: 100px;
+  font-weight: 500;
 }
