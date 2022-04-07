@@ -158,7 +158,7 @@
   background-color: #fff;
 }
 .bottomBigBox .add {
-  width: 1140px;
+  padding: 0 200px;
   margin: auto;
   display: flex;
   justify-content: space-between;
@@ -188,4 +188,18 @@
 .bottomBigBox .add .EmailBigBox .EmailBox .btn {
   width: 100px;
   font-weight: 500;
+}
+.tips {
+  position: fixed;
+  top: 100px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.subBox {
+  display: flex;
+}
+.subBox button {
+  white-space: nowrap;
+  padding: 10px;
+  margin-left: 10px;
 }
