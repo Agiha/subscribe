@@ -19,27 +19,10 @@
   margin-bottom: 41px;
 }
 .TeamBigBox .backGround .Auto .SearchIcon {
-  background-color: #fff;
   border-radius: 4px;
 }
-.TeamBigBox .backGround .Auto .SearchIcon .css-1nylpq2 {
-  width: 750px;
-  padding: 16px;
-  box-sizing: border-box;
-  height: 4.2rem;
-}
-.TeamBigBox .backGround .Auto .SearchIcon .css-oe0os1-MuiSvgIcon-root {
-  margin-right: 12px;
-  margin-bottom: 3px;
-  width: 26px;
-  height: 26px;
-}
-.TeamBigBox .backGround .Auto .SearchIcon .css-aqpgxn-MuiFormLabel-root-MuiInputLabel-root {
-  color: #84818a;
-  font-size: 18px;
-  font-weight: 500;
-  font-family: 'Manrope';
-  text-align: left;
+.TeamBigBox .backGround .Auto .SearchIcon form {
+  width: 100%;
 }
 .TeamBigBox .backGround .Auto .PopularBox {
   color: #ffffff;
@@ -50,10 +33,85 @@
   margin-top: 32px;
 }
 .TeamBigBox .figureOutBox {
+  margin-top: 30px;
+  padding: 0 600px;
+  margin-bottom: 40px;
+}
+.TeamBigBox .figureOutBox .figureTitle {
+  font-size: 30px;
+  font-weight: 600;
+  text-align: left;
+  width: 100%;
+}
+.TeamBigBox .figureOutBox .noticeBox {
   display: flex;
-  flex-direction: column;
   align-items: center;
-  margin-top: 130px;
+  padding: 24px;
+  box-sizing: border-box;
+  background: #fff;
+  margin-top: 20px;
+  border-radius: 5px;
+}
+.TeamBigBox .figureOutBox .noticeBox .Img {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  margin-right: 24px;
+}
+.TeamBigBox .figureOutBox .noticeBox .Img img {
+  width: 100%;
+  height: 100%;
+}
+.TeamBigBox .figureOutBox .noticeBox .contentBox {
+  width: 654px;
+}
+.TeamBigBox .figureOutBox .noticeBox .contentBox .nameAndTime {
+  display: flex;
+  justify-content: space-between;
+}
+.TeamBigBox .figureOutBox .noticeBox .contentBox .nameAndTime .Name {
+  color: #2e2c34;
+  font-size: 18px;
+  font-weight: 700;
+  font-family: 'Manrope';
+  text-align: left;
+}
+.TeamBigBox .figureOutBox .noticeBox .contentBox .nameAndTime .Time {
+  color: #84818a;
+  font-size: 12px;
+  font-weight: 500;
+  font-family: 'Manrope';
+  text-align: right;
+  line-height: 18px;
+}
+.TeamBigBox .figureOutBox .noticeBox .contentBox .content {
+  display: flex;
+  align-items: center;
+  margin-top: 4px;
+}
+.TeamBigBox .figureOutBox .noticeBox .contentBox .content .noticeContent {
+  color: #84818a;
+  font-size: 16px;
+  font-weight: 500;
+  font-family: 'Manrope';
+  text-align: left;
+}
+.TeamBigBox .figureOutBox .noticeBox .contentBox .content .Source {
+  display: flex;
+  align-items: center;
+}
+.TeamBigBox .figureOutBox .noticeBox .contentBox .content .Source .Icon {
+  width: 16px;
+  height: 16px;
+  color: #761fde;
+}
+.TeamBigBox .figureOutBox .noticeBox .contentBox .content .Source span {
+  color: #2e2c34;
+  font-size: 14px;
+  font-weight: 500;
+  font-family: 'Manrope';
+  text-align: left;
+  line-height: 20px;
 }
 .TeamBigBox .figureOutBox .figureOut {
   width: 750px;
@@ -81,7 +139,6 @@
   text-align: left;
 }
 .TeamBigBox .figureOutBox .figureOut .contentBox .content {
-  width: 642px;
   color: #84818a;
   font-size: 16px;
   font-weight: 500;

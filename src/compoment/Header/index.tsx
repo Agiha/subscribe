@@ -35,15 +35,15 @@ export default function HeaderBox() {
             <HashRouter>
               <Link to={'/'}>
                 <div className="HomeOptions">
+                  <span>Explore</span>
+                </div>
+              </Link>
+              <Link to={'/subscribe'}>
+                <div className="HomeOptions">
                   <span>Subscribe</span>
                 </div>
               </Link>
 
-              <Link to={'/explore'}>
-                <div className="HomeOptions">
-                  <span>Explore</span>
-                </div>
-              </Link>
               <Link to={'/faq'}>
                 <div className="HomeOptions">
                   <span>FAQ</span>

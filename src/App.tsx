@@ -37,8 +37,8 @@ function App() {
         <HashRouter>
           <Switch>
             <Route path="/faq" exact component={FAQ}></Route>
-            <Route path="/" exact component={Subscribe}></Route>
-            <Route path="/explore" exact component={Explore}></Route>
+            <Route path="/subscribe" exact component={Subscribe}></Route>
+            <Route path="/" exact component={Explore}></Route>
           </Switch>
         </HashRouter>
       </Layouts>

@@ -1,6 +1,6 @@
 import axios, { AxiosRequestConfig } from 'axios'
 
-const BASEURL = 'http://34.135.184.222:8899/'
+const BASEURL = 'http://34.135.184.222:8899'
 export async function getCalendarList(obj: any) {
   return await axios.get(`${BASEURL}/get-drop`, {
     params: obj,
